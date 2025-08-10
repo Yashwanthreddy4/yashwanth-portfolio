@@ -175,86 +175,116 @@
             </div>
           </div>
 
-          <!-- Contact Form -->
-          <div class="bg-gray-900/40 backdrop-blur-sm rounded-2xl p-8 border border-gray-800 shadow-2xl animate-slide-up" style="animation-delay: 0.5s;">
-            <div class="flex items-center mb-6">
-              <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mr-4">
-                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                </svg>
-              </div>
-              <h3 class="text-2xl font-bold text-white">Send a Message</h3>
-            </div>
-          <form id="contactForm" action="https://formspree.io/f/mwpqaroa" method="POST" class="space-y-6">
-  <!-- Name Field -->
-  <div>
-    <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Your Name</label>
-    <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300" placeholder="Enter your full name" required>
-  </div>
-
-  <!-- Email Field -->
-  <div>
-    <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
-    <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300" placeholder="your.email@example.com" required>
-  </div>
-
-  <!-- Subject Field -->
-  <div>
-    <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
-    <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300" placeholder="What's this about?" required>
-  </div>
-
-  <!-- Message Field -->
-  <div>
-    <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
-    <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300 resize-none" placeholder="Tell me about your project or inquiry..." required></textarea>
-  </div>
-
-  <!-- Submit Button -->
-  <button type="submit" class="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 px-6 rounded-xl hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 font-semibold">
-    <span class="flex items-center justify-center">
-      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+         <!-- Contact Form -->
+<div class="bg-gray-900/40 backdrop-blur-sm rounded-2xl p-8 border border-gray-800 shadow-2xl animate-slide-up" style="animation-delay: 0.5s;">
+  <div class="flex items-center mb-6">
+    <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-xl flex items-center justify-center mr-4">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
       </svg>
-      Send Message
-    </span>
-  </button>
-</form>
+    </div>
+    <h3 class="text-2xl font-bold text-white">Send a Message</h3>
+  </div>
 
-            <p id="formStatus" class="mt-4 text-center text-sm"></p>
+  <!-- Status Message -->
+  <div id="formStatus" class="mb-4 text-center text-sm hidden"></div>
+
+  <form id="contactForm" action="https://formspree.io/f/mwpqaroa" method="POST" class="space-y-6">
+    <!-- Name Field -->
+    <div>
+      <label for="name" class="block text-sm font-medium text-gray-300 mb-2">Your Name</label>
+      <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300" placeholder="Enter your full name" required>
+    </div>
+
+    <!-- Email Field -->
+    <div>
+      <label for="email" class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+      <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300" placeholder="your.email@example.com" required>
+    </div>
+
+    <!-- Subject Field -->
+    <div>
+      <label for="subject" class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+      <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300" placeholder="What's this about?" required>
+    </div>
+
+    <!-- Message Field -->
+    <div>
+      <label for="message" class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+      <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-gray-800/50 border border-gray-700 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300 resize-none" placeholder="Tell me about your project or inquiry..." required></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="w-full bg-gradient-to-r from-cyan-500 to-blue-500 text-white py-3 px-6 rounded-xl hover:from-cyan-600 hover:to-blue-600 transition-all duration-300 transform hover:scale-105 shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 font-semibold">
+      <span class="flex items-center justify-center">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+        </svg>
+        Send Message
+      </span>
+    </button>
+  </form>
+
+  <!-- Form Note -->
+  <div class="mt-6 p-4 bg-blue-500/10 border border-blue-500/20 rounded-xl">
+    <div class="flex items-start">
+      <svg class="w-5 h-5 text-blue-400 mt-0.5 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+      </svg>
+      <p class="text-blue-300 text-sm">I typically respond within 24 hours. For urgent matters, feel free to reach out via phone or email directly.</p>
+    </div>
+  </div>
+</div>
 
 <script>
-document.getElementById("contactForm").addEventListener("submit", async function(e) {
-  e.preventDefault(); // Stop form from reloading page
-
-  const form = e.target;
-  const status = document.getElementById("formStatus");
-
-  const data = new FormData(form);
-
-  try {
-    const response = await fetch(form.action, {
-      method: form.method,
-      body: data,
-      headers: { 'Accept': 'application/json' }
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contactForm');
+  const status = document.getElementById('formStatus');
+  
+  if (form) {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault(); // Prevent default form submission
+      
+      // Show loading state
+      status.innerHTML = "🔄 Sending message...";
+      status.className = "mb-4 text-center text-cyan-400 text-sm block";
+      
+      const formData = new FormData(form);
+      
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        
+        if (response.ok) {
+          status.innerHTML = "✅ Message sent successfully! I'll get back to you soon.";
+          status.className = "mb-4 text-center text-green-400 text-sm block";
+          form.reset(); // Clear the form
+          
+          // Hide success message after 5 seconds
+          setTimeout(() => {
+            status.className = "mb-4 text-center text-sm hidden";
+          }, 5000);
+        } else {
+          throw new Error('Network response was not ok');
+        }
+      } catch (error) {
+        status.innerHTML = "❌ Oops! There was a problem sending your message. Please try again.";
+        status.className = "mb-4 text-center text-red-400 text-sm block";
+        
+        // Hide error message after 5 seconds
+        setTimeout(() => {
+          status.className = "mb-4 text-center text-sm hidden";
+        }, 5000);
+      }
     });
-
-    if (response.ok) {
-      status.innerHTML = "✅ Message sent successfully!";
-      status.className = "mt-4 text-center text-green-400 text-sm";
-      form.reset(); // Clear form fields
-    } else {
-      const errData = await response.json();
-      status.innerHTML = "❌ Oops! Something went wrong.";
-      status.className = "mt-4 text-center text-red-400 text-sm";
-    }
-  } catch (error) {
-    status.innerHTML = "❌ Network error. Please try again.";
-    status.className = "mt-4 text-center text-red-400 text-sm";
   }
 });
 </script>
-
             <!-- Form Note -->
             <div class="mt-6 p-4 bg-blue-500/10 border border-blue-500/20 rounded-xl">
               <div class="flex items-start">
