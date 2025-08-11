@@ -285,10 +285,9 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
-<!-- Contact Action Cards -->
-<div class="flex flex-wrap justify-center gap-6 mt-8">
-
-    <!-- Schedule a Call Card -->
+<!-- Contact Action Cards Row -->
+<div class="flex justify-center gap-6 mt-8 flex-nowrap">
+    <!-- Schedule a Call -->
     <div onclick="scheduleCall()" 
          class="card card-schedule w-60 h-40 rounded-2xl p-6 text-center cursor-pointer group hover:shadow-lg transition-all duration-300">
         <div class="flex flex-col items-center justify-center h-full">
@@ -302,7 +301,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </div>
 
-    <!-- View GitHub Card -->
+    <!-- View GitHub -->
     <div onclick="viewGitHub()" 
          class="card card-github w-60 h-40 rounded-2xl p-6 text-center cursor-pointer group hover:shadow-lg transition-all duration-300">
         <div class="flex flex-col items-center justify-center h-full">
@@ -316,7 +315,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </div>
 
-    <!-- GitHub Profile Card -->
+    <!-- GitHub Profile -->
     <div onclick="openGitHubProfile()" 
          class="card bg-gray-800 w-60 h-40 rounded-2xl p-6 text-center cursor-pointer group hover:shadow-lg transition-all duration-300">
         <div class="flex flex-col items-center justify-center h-full">
@@ -330,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
     </div>
 
-    <!-- LinkedIn Card -->
+    <!-- LinkedIn -->
     <div onclick="openLinkedIn()" 
          class="card bg-blue-800 w-60 h-40 rounded-2xl p-6 text-center cursor-pointer group hover:shadow-lg transition-all duration-300">
         <div class="flex flex-col items-center justify-center h-full">
@@ -343,8 +342,12 @@ document.addEventListener('DOMContentLoaded', function() {
             </p>
         </div>
     </div>
-
 </div>
+
+<!-- Footer -->
+<footer class="mt-8 text-center text-gray-400">
+    &copy; 2025 Yashwanth Reddy. All rights reserved.
+</footer>
 
 
 
