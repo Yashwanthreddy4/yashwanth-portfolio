@@ -344,12 +344,12 @@ function scheduleCall() {
 function downloadResume() {
     // Create a download link for your resume
     const link = document.createElement('a');
-    link.href = 'assets/Yashwanth_Reddy_Resume.pdf'; // Update with actual path
+    link.href = 'resume.pdf'; // Update with actual path
     link.download = 'Yashwanth_Reddy_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
-
+  
     showNotification('Resume downloaded successfully!', 'success');
 }
 
