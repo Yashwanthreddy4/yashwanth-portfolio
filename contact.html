@@ -29,6 +29,19 @@
               '0%, 100%': { transform: 'translateY(0px)' },
               '50%': { transform: 'translateY(-10px)' },
             }
+                     transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px) scale(1.03);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+        }
+        .notification-enter {
+            transform: translateX(100%);
+        }
+        .notification-show {
+            transform: translateX(0);
+        }
           }
         }
       }
